@@ -1,0 +1,33 @@
+jQuery('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    responsive:{
+        0:{
+            items:1
+        },
+        767:{
+            items:3
+        },
+        1200:{
+            items:4
+        }
+    }
+})
+
+   
+  $(document).ready(function(){
+    $("#datetimepicker1").datepicker();
+});
+$(document).ready(function(){
+    $("#datetimepicker2").datepicker();
+});
+$(document).ready(function(){
+	$('#nav-icon1').click(function(){
+		$(this).toggleClass('open');
+	});
+});
+$(document).ready(function(){
+	$('#nav-icon1').click(function(){
+		$('.mobile-nav-open').toggleClass('show');
+	});
+});
