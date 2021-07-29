@@ -1125,4 +1125,7 @@ footer{
   .get-in-touch-info{
     margin-top: 50px;
   }
+  .mobile-nav-open ul li:first-child{
+    padding-top: 30px;
+  }
 }
