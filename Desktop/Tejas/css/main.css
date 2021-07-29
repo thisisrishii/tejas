@@ -369,16 +369,25 @@ nav{
   background-color: #391f14;
   width: 100%;
   position: relative;
+  top: 82px;
+  margin-bottom: 82px;
   min-height: 670px;
   overflow: hidden;
+}
+.banner.inside-pages{
+  min-height: 350px;
 }
 .banner-img{
   width: 77%;
   position: absolute;
   right: 0;
 }
+.banner.inside-pages .banner-img{
+  width: 60%;
+}
 .banner-img img{
   width: 100%;
+  height: auto;
 }
 .banner-info{
   position: absolute;
@@ -392,7 +401,7 @@ nav{
     line-height: 1;
     display: block;
     color: #fff;
-    width: 55%;
+    width: 90%;
     margin-top: 0;
     font-family: 'Cormorant', serif;
 }
@@ -405,6 +414,9 @@ nav{
     width: 27%;
     margin-top: 0;
     font-family: 'Josefin Sans', sans-serif;
+}
+.banner.inside-pages .banner-info p{
+  width: 58%;
 }
 .banner-info a{
   background-image: linear-gradient(to left,#a85432,#8f4e35,#a85432);
@@ -422,6 +434,13 @@ nav{
   padding-top: 110px;
   background: #f5f5f5;
 }
+.about-info.room-info{
+  background: white;
+  padding-bottom: 110px;
+}
+.about-info.room-info h3{
+  width: 50%;
+}
 .about-info h3{
   font-size: 34px;
   display: block;
@@ -429,7 +448,7 @@ nav{
   line-height: 1.1;
   text-align: center;
   font-family: "Cormorant",serif;
-  width: 65%;
+  width: 75%;
   margin: 0 auto;
   padding-bottom: 60px;
 }
@@ -531,6 +550,9 @@ nav{
 }
 .book-room{
   padding-bottom: 110px;
+}
+.book-room.about-us{
+  padding-top: 240px;
 }
 .book-room-form{
   width: 42%;
@@ -671,6 +693,110 @@ footer{
 .owl-carousel{
   padding: 0 30px;
 }
+.hotel-rooms{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+.rooms{
+  width: 50%;
+  padding: 20px;
+}
+.rooms img{
+  margin-bottom: 20px;
+}
+.rooms p{
+  margin-bottom: 20px;
+  color: #391f14;
+  font-weight: 300;
+}
+.get-in-touch-form h4{
+  font-size: 27px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.get-in-touch-form .send-btn{
+  background: rgb(255, 255, 255);
+    display: inline-block;
+    padding: 18px 44px;
+    font-family: Cormorant, serif;
+    font-size: 14px;
+    font-weight: 400;
+    border: 1px solid rgb(253, 143, 95);
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: rgb(253, 143, 95) !important;
+    margin-top: 20px;
+    text-decoration: none;
+}
+.get-in-touch-form .send-btn:hover{
+  background: rgb(253, 143, 95);
+  color: white !important;
+  font-weight: 600;
+}
+.get-in-touch-form input{
+  margin-top: 20px;
+  padding: 20px 10px;
+}
+.get-in-touch-info ul{
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+}
+.get-in-touch-info ul li{
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  position: relative;
+}
+.get-in-touch-info ul li div{
+  position: absolute;
+  left: 50px;
+}
+.get-in-touch-info ul li div p{
+  margin-bottom: 0px;
+  font-size: 16px;
+  color: rgb(42, 42, 42);
+  font-family: Cormorant, serif;
+}
+.get-in-touch-info ul li div span{
+  color: rgb(138, 138, 138);
+  margin-top: 3px;
+  display: block;
+}
+.get-in-touch-info ul li i{
+  color: rgb(138, 138, 138);
+  font-size: 30px;
+}
+.get-in-touch{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 0;
+}
+.get-in-touch-form{
+  width: 60%;
+}
+.get-in-touch-info{
+  width: 28%;
+}
+@media(max-width: 991px){
+  .get-in-touch{
+    flex-direction: column;
+  }
+  .get-in-touch-form{
+    width: 100%;
+  }
+  .get-in-touch-info{
+    width: 100%;
+    margin-top: 40px;
+  }
+  .get-in-touch{
+    padding: 80px 0;
+  }
+}
 @media(max-width: 1200px){
   .address ul li {
     font-size: 12px;
@@ -724,6 +850,9 @@ footer{
     padding-bottom: 40px;
   }
   .room-slider{
+    padding-top: 100px;
+  }
+  .book-room.about-us{
     padding-top: 100px;
   }
   .room-slider h3{
@@ -836,11 +965,17 @@ footer{
   .banner-info p{
     width: 100%;
   }
+  .banner.inside-pages .banner-info p {
+    width: 100%;
+}
   .banner {
     min-height: 350px;
     position: relative;
     top: 50px;
     margin-bottom: 50px;
+  }
+  .banner.inside-pages {
+    min-height: 240px;
   }
   .about-info {
     padding-top: 50px;
@@ -855,7 +990,6 @@ footer{
   }
   .travel-details, .book-room-details{
     width: 100%;
-    margin-bottom: 30px;
   }
   .travel-img {
     margin: 0 auto;
@@ -953,5 +1087,23 @@ footer{
   }
   .mobile-nav-open.show{
     display: block;
+  }
+  .about-info.room-info .rooms, .about-info.room-info h3{
+    width: 100%;
+  }
+  .room-details{
+    align-items: baseline;
+  }
+  .rooms {
+    padding: 10px;
+  }
+  .about-info.room-info{
+    padding-bottom: 20px;
+  }
+  .banner-info {
+    top: 10%;
+  }
+  .get-in-touch{
+    padding: 50px 0;
   }
 }
