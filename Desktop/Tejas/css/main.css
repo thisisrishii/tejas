@@ -1113,4 +1113,10 @@ footer{
   .get-in-touch-form .send-btn{
     padding: 15px 35px;
   }
+  .banner-info a{
+    padding: 15px 30px;
+  }
+  .travel-details a{
+    padding: 15px 30px;
+  }
 }
