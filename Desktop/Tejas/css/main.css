@@ -1113,10 +1113,4 @@ footer{
   .get-in-touch-form .send-btn{
     padding: 15px 35px;
   }
-  .get-in-touch-form .row .col:first-child{
-    padding-right: 8px;
-  }
-  .get-in-touch-form .row .col:last-child{
-    padding-left: 8px;
-  }
 }
