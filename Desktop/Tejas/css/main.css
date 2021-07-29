@@ -1073,7 +1073,7 @@ footer{
     position: fixed;
     background: #391f14;
     z-index: 2;
-    top: 12%;
+    top: 65px;
   }
   .mobile-nav-open ul li{
     color: white;
