@@ -1085,6 +1085,7 @@ footer{
   .mobile-nav-open ul li a{
     color: white;
     text-decoration: none;
+    font-size: 20px;
   }
   .mobile-nav-open ul li a:hover{
     color: #fd8f5f;
