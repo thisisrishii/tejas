@@ -990,6 +990,7 @@ footer{
   }
   .travel-details, .book-room-details{
     width: 100%;
+    margin-bottom: 30px;
   }
   .travel-img {
     margin: 0 auto;
