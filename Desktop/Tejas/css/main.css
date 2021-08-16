@@ -267,10 +267,11 @@ body{
     font-size: 16px;
 }
 nav{
-  background-color: #391f14;
+  background-color: white;
   position: fixed;
   z-index: 2;
   width: 100%;
+  border-bottom: 2px solid lightgrey;
 }
 .main-menu{
   display: flex;
@@ -280,13 +281,17 @@ nav{
 
 .address{
   display: flex;
-  max-width: 50%;
-  width: 50%;
+  max-width: 51%;
+  width: 51%;
   align-items: center;
 }
+
+
+
 .address img{
   object-fit: contain;
 }
+
 .address ul{
   list-style: none;
   display: flex;
@@ -295,7 +300,7 @@ nav{
   margin-bottom: 0;
 }
 .address ul li {
-  color: white;
+  color: black;
   font-size: 16px;
   font-weight: 300;
 }
@@ -316,30 +321,30 @@ nav{
   position: relative;
 }
 .desktop-menu ul li a{
-  color: white;
+  color: black;
   text-decoration: none;
   display: block;
   position: relative;
 }
 .desktop-menu ul li a:hover{
-  color: #fd8f5f;
+  color: #e00024;
 }
 .desktop-menu ul li:last-child a:hover{
   color: white;
 }
 .desktop-menu ul li:last-child:hover{
-  background-color: #fd8f5f;
+  background-color: black;
 }
 .desktop-menu ul li a::after{
     content: "";
     position: absolute;
     width: 0;
-    bottom: -4px;
+    bottom: -3px;
     right: 5px;
     left: -5px;
     height: 3px;
     z-index: 1;
-    background: #fd8f5f;
+    background: #e00024;
     -webkit-transition: .4s;
     -moz-transition: .4s;
     -o-transition: .4s;
@@ -362,37 +367,43 @@ nav{
 }
 .desktop-menu ul li:last-child{
   padding: 10px 20px;
-  background-color: #a85432;
+  background-color: #3e117a;
   margin-left: 30px;
 }
+.desktop-menu ul li:last-child a{
+  color: white;
+}
 .banner{
-  background-color: #391f14;
+  background-color: white;
   width: 100%;
   position: relative;
   top: 82px;
   margin-bottom: 82px;
-  min-height: 670px;
+  min-height: 580px;
   overflow: hidden;
 }
 .banner.inside-pages{
-  min-height: 350px;
+  min-height: 400px;
 }
 .banner-img{
-  width: 77%;
+  width: 50%;
   position: absolute;
   right: 0;
 }
 .banner.inside-pages .banner-img{
-  width: 60%;
+  width: 52%;
 }
 .banner-img img{
   width: 100%;
-  height: auto;
+  height: 650px;
+}
+.banner.inside-pages .banner-img img{
+  height: 400px;
 }
 .banner-info{
   position: absolute;
-  top: 22%;
-  left: 8%;
+  top: 15%;
+  left: 5%;
 }
 .banner-info h2{
   font-size: 100px;
@@ -400,18 +411,21 @@ nav{
     margin-bottom: 33px;
     line-height: 1;
     display: block;
-    color: #fff;
-    width: 90%;
+    color: black;
+    width: 60%;
     margin-top: 0;
     font-family: 'Cormorant', serif;
+}
+.banner.inside-pages .banner-info h2{
+  width: 90%;
 }
 .banner-info p{
   margin-bottom: 39px;
     display: block;
-    color: #fff;
+    color: black;
     font-size: 20px;
     padding-right: 50px;
-    width: 27%;
+    width: 34%;
     margin-top: 0;
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -419,7 +433,7 @@ nav{
   width: 58%;
 }
 .banner-info a{
-  background-image: linear-gradient(to left,#a85432,#8f4e35,#a85432);
+  background-color: #3e117a;
   color: white;
   text-decoration: none;
   padding: 20px 40px;
@@ -428,15 +442,14 @@ nav{
   font-family: 'Josefin Sans', sans-serif;
 }
 .banner-info a:hover{
-  background: #fd8f5f;
-}
+  background: black;}
 .about-info{
   padding-top: 110px;
   background: #f5f5f5;
 }
 .about-info.room-info{
-  background: white;
-  padding-bottom: 110px;
+  background: #f5f5f5;
+  padding-bottom: 55px;
 }
 .about-info.room-info h3{
   width: 50%;
@@ -471,10 +484,10 @@ nav{
   position: absolute;
   top: 50%;
   left: 28%;
-  width: 463px !important;
+  width: 464px !important;
 }
-.travel-details h4 , .book-room-details h4, .book-room-form h4{
-  color: #a85432;
+.travel-details h4 , .book-room-details h4, .book-room-form h4, .services h4{
+  color: #3e117a;
   font-size: 34px;
   width: 80%;
   display: block;
@@ -482,6 +495,11 @@ nav{
   line-height: 1.1;
   margin-bottom: 30px;
   font-family: "Cormorant",serif;
+}
+.services h4{
+  text-align: center;
+  width: 100%;
+  padding-bottom: 20px;
 }
 .travel-details p, .book-room-details p{
   font-size: 16px;
@@ -492,23 +510,26 @@ nav{
     padding-right: 50px;
 }
 .travel-details a{
-  background-image: linear-gradient(to left,#a85432,#8f4e35,#a85432);
+  background-color: #3e117a;
   padding: 20px 40px;
   color: white;
   text-decoration: none;
   display: inline-block;
 }
 .travel-details a:hover{
-  background: #fd8f5f;
+  background: black;
 }
 .book-room-btn:hover{
-  background: #fd8f5f;
+  background: black;
   color: white;
   text-decoration: none;
 }
 .room-slider{
   padding-top: 240px;
-  padding-bottom: 110px;
+  padding-bottom: 55px;
+}
+.contact-page{
+  background-color: #f5f5f5;
 }
 .room-slider h3{
   font-size: 34px;
@@ -537,7 +558,7 @@ nav{
 }
 
 .room-details span{
-  color: #fd8f5f;
+  color: #3e117a;
 }
 .room-details h5{
   font-size: 20px;
@@ -550,6 +571,7 @@ nav{
 }
 .book-room{
   padding-bottom: 110px;
+  padding-top: 55px;
 }
 .book-room.about-us{
   padding-top: 240px;
@@ -565,7 +587,7 @@ nav{
   margin-bottom: 20px;
 }
 .book-room-btn{
-  background: #a85432;
+  background: #3e117a;
     padding: 15px 40px;
     text-decoration: none;
     color: white;
@@ -580,10 +602,15 @@ nav{
   display: flex;
   justify-content:space-between ;
   padding-bottom: 110px;
+  flex-wrap: wrap;
 }
 .main-services div{
   padding: 0 20px;
   width: 33.33%;
+  margin-bottom: 50px;
+}
+.main-services .service4, .main-services .service5, .main-services .service6{
+  margin-bottom: 0;
 }
 .main-services div img{
   width: 100%;
@@ -624,7 +651,9 @@ footer{
   width: 25%;
 }
 .company-info img{
-  margin-bottom: 35px;
+  margin-bottom: 20px;
+  margin-left: -5px;
+  width: 55%;
 }
 .company-info p{
   color: #5e5e5e;
@@ -639,7 +668,7 @@ footer{
 }
 .company-info ul li i{
   font-size: 20px;
-  color: #a85432;;
+  color: maroon;
 }
 .company-info ul li i:hover{
   color: black;
@@ -661,8 +690,8 @@ footer{
   text-decoration: underline transparent;
 }
 .footer-nav ul li a:hover{
-  color: #fd8f5f;
-  text-decoration: line-through #fd8f5f;
+  color: #3e117a;
+  text-decoration: line-through #3e117a;
 }
 .footer-nav ul li + li{
   margin-top: 20px;
@@ -678,7 +707,7 @@ footer{
 .footer-number{
   font-family: "Josefin Sans",sans-serif;
   font-size: 24px!important;
-  color: #fd8f5f!important;
+  color: #3e117a!important;
   margin-bottom: 0;
   font-weight: 400!important;
   display: block;
@@ -722,17 +751,17 @@ footer{
     font-family: Cormorant, serif;
     font-size: 14px;
     font-weight: 400;
-    border: 1px solid rgb(253, 143, 95);
+    border: 1px solid #3e117a;
     letter-spacing: 3px;
     text-align: center;
     text-transform: uppercase;
     cursor: pointer;
-    color: rgb(253, 143, 95) !important;
+    color: #3e117a !important;
     margin-top: 20px;
     text-decoration: none;
 }
 .get-in-touch-form .send-btn:hover{
-  background: rgb(253, 143, 95);
+  background: #3e117a;
   color: white !important;
   font-weight: 600;
 }
@@ -781,6 +810,19 @@ footer{
 }
 .get-in-touch-info{
   width: 28%;
+}
+.get-in-touch ul li:nth-child(2){
+  padding-left: 7px;
+}
+.facilities{
+  padding-left: 30px;
+}
+.facilities li{
+  font-size: 16px;
+    font-weight: 300;
+    color: #64676c;
+    line-height: 1.6;
+    padding-bottom: 10px;
 }
 @media(max-width: 991px){
   .get-in-touch{
@@ -894,6 +936,7 @@ footer{
   -o-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
   cursor: pointer;
+  margin-top: 8px;
 }
 
 #nav-icon1 span, #nav-icon3 span, #nav-icon4 span {
@@ -901,7 +944,7 @@ footer{
   position: absolute;
   height: 4px;
   width: 100%;
-  background: #fff;
+  background: black;
   border-radius: 9px;
   opacity: 1;
   left: 0;
@@ -998,8 +1041,11 @@ footer{
   .travel-img {
     margin: 0 auto;
   }
-  .travel-details h4, .book-room-details h4, .book-room-form h4{
+  .travel-details h4, .book-room-details h4, .book-room-form h4, .services h4{
     font-size: 25px;
+  }
+  .services h4{
+    padding-bottom: 0;
   }
   .travel-details p, .book-room-details p{
     padding-right: 0;
@@ -1020,6 +1066,7 @@ footer{
   }
   .book-room {
     padding-bottom: 40px;
+    padding-top: 0;
   }
   .main-services div {
     width: 100%;
@@ -1047,7 +1094,7 @@ footer{
     display: none;
   }
   .mobile-nav {
-    background: #391f14;
+    background: white;
     display: flex;
     justify-content: space-between;
     padding: 20px 20px;
@@ -1056,6 +1103,8 @@ footer{
     z-index: 3;
     width: 100%;
     align-items: end;
+    border-bottom: 2px solid lightgrey;
+    padding-bottom: 10px;
   }
   .address{
     max-width: 75%;
@@ -1074,21 +1123,21 @@ footer{
     padding-right: 30px;
     margin-bottom: 0;
     position: fixed;
-    background: #391f14;
+    background: white;
     z-index: 2;
     top: 65px;
   }
   .mobile-nav-open ul li{
-    color: white;
+    color: #3e117a;
     padding-top: 20px;
   }
   .mobile-nav-open ul li a{
-    color: white;
+    color: black;
     text-decoration: none;
     font-size: 20px;
   }
   .mobile-nav-open ul li a:hover{
-    color: #fd8f5f;
+    color: #e00024;
   }
   .mobile-nav-open.show{
     display: block;
@@ -1106,7 +1155,7 @@ footer{
     padding-bottom: 20px;
   }
   .banner-info {
-    top: 12%;
+    top: 22%;
   }
   .get-in-touch{
     padding: 40px 0;
@@ -1128,5 +1177,15 @@ footer{
   }
   .mobile-nav-open ul li:first-child{
     padding-top: 40px;
+  }
+  .facilities li{
+    padding-bottom: 5px;
+    font-size: 15px;
+  }
+  .facilities{
+    padding-left: 25px;
+  }
+  .mobile-nav .logo-img{
+    width: 55%;
   }
 }
