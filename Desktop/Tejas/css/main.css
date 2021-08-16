@@ -1157,6 +1157,9 @@ footer{
   .banner-info {
     top: 22%;
   }
+  .banner.inside-pages .banner-info{
+    top: 28%;
+  }
   .get-in-touch{
     padding: 40px 0;
   }
